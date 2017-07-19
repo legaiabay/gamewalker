@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<widget id="com.legaiabay.gamewalker" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+  <name>Gamewalker</name>
+  <description>
+        Mobile Game Community App
+    </description>
+  <author email="legaiabay@gmail.com" href="http://legaiabay.blogspot.com">
+      Legaiabay
+    </author>
+  <content src="index.html"/>
+  <access origin="*"/>
+  <preference name="webviewbounce" value="false"/>
+  <preference name="Orientation" value="portrait"/>
+  <preference name="UIWebViewBounce" value="false"/>
+  <preference name="DisallowOverscroll" value="true"/>
+  <preference name="android-minSdkVersion" value="16"/>
+  <preference name="BackupWebStorage" value="none"/>
+  <preference name="AllowInlineMediaPlayback" value="true" />
+  <preference name="MediaPlaybackRequiresUserAction" value="false"/>
+  <feature name="StatusBar">
+    <param name="ios-package" onload="true" value="CDVStatusBar"/>
+  </feature>
+  <feature name="Device">
+    <param name="ios-package" value="CDVDevice" />
+    <param name="android-package" value="org.apache.cordova.device.Device" />
+  </feature>
+  <feature name="File">
+      <param name="ios-package" value="CDVFile" />
+      <param name="android-package" value="org.apache.cordova.file.FileUtils" />
+  </feature>
+  <feature name="FileTransfer">
+      <param name="ios-package" value="CDVFileTransfer" />
+      <param name="android-package" value="org.apache.cordova.filetransfer.FileTransfer" />
+  </feature>
+  <plugin name="cordova-plugin-device" spec="~1.1.3"/>
+  <plugin name="cordova-plugin-console" spec="~1.0.4"/>
+  <plugin name="cordova-plugin-whitelist" spec="~1.3.0"/>
+  <plugin name="cordova-plugin-statusbar" spec="~2.2.0"/>
+  <plugin name="ionic-plugin-keyboard" spec="~2.2.1"/>
+</widget>
